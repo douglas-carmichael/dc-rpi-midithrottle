@@ -1,0 +1,405 @@
+; ------- Bome MIDI Translator: signed project file
+; ------- You can modify this file as you like, but that will invalidate the
+; ------- signature so that it cannot be opened in the BomeBox or MT Player anymore.
+;
+[Preset.0]
+Active=1
+Comments=
+DefaultOutPorts=MIDA00010007BomeBox
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 var="oo" Type="SetVar"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="NoteOff"><Channel num="0"/><Value1 var="oo" Type="SetVar"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming2=MID3<Incoming Action="MIDI"><Simple Type="PitchBend"><Channel num="0"/><Value1 var="oo" Type="SetVar"/></Simple></Incoming>
+Incoming3=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="0"/><Value1 var="oo" Type="SetVar"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming4=MID3<Incoming Action="MIDI"><Simple Type="ChannelPressure"><Channel num="0"/><Value1 var="oo" Type="SetVar"/></Simple></Incoming>
+Name=MONTAGE -> DAW (Ch. 1)
+Name0=Note On
+Name1=Note Off
+Name2=Pitch Bend
+Name3=CC
+Name4=Channel Pressure
+Options0=Actv01Stop00OutO01
+Options1=Actv01Stop00OutO01
+Options2=Actv01Stop00OutO01
+Options3=Actv01Stop00OutO01
+Options4=Actv01Stop00OutO01
+Outgoing0=MID3<Outgoing Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 var="oo"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing1=MID3<Outgoing Action="MIDI"><Simple Type="NoteOff"><Channel num="0"/><Value1 var="oo"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing2=MID3<Outgoing Action="MIDI"><Simple Type="PitchBend"><Channel num="0"/><Value1 var="oo"/></Simple></Outgoing>
+Outgoing3=MID3<Outgoing Action="MIDI"><Simple Type="ControlChange"><Channel num="0"/><Value1 var="oo"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing4=MID3<Outgoing Action="MIDI"><Simple Type="ChannelPressure"><Channel num="0"/><Value1 var="oo"/></Simple></Outgoing>
+PresetSwitchIgnore=0
+
+[Preset.1]
+Active=1
+Comments=
+DefaultInPorts=MIDA00010012MONTAGE M Keyboard
+DefaultOutPorts=MIDA0001000CRoland SH-4D
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="1"/><Value1 var="oo" Type="SetVar"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="NoteOff"><Channel num="1"/><Value1 var="oo" Type="SetVar"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming2=MID3<Incoming Action="MIDI"><Simple Type="PitchBend"><Channel num="1"/><Value1 var="oo" Type="SetVar"/></Simple></Incoming>
+Incoming3=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="1"/><Value1 var="oo" Type="SetVar"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming4=MID3<Incoming Action="MIDI"><Simple Type="ProgramChange"><Channel num="1"/><Value1 var="oo" Type="SetVar"/></Simple></Incoming>
+Incoming5=MID3<Incoming Action="MIDI"><Simple Type="ChannelPressure"><Channel num="1"/><Value1 var="oo" Type="SetVar"/></Simple></Incoming>
+Name=MONTAGE -> SH-4d (Ch. 2)
+Name0=Note On
+Name1=Note Off
+Name2=Pitch Bend
+Name3=CC
+Name4=PC
+Name5=Channel Pressure
+Options0=Actv01Stop00OutO01
+Options1=Actv01Stop00OutO01
+Options2=Actv01Stop00OutO01
+Options3=Actv01Stop00OutO01StMa00000003label0023__cmt>// Only modify CC#0 and CC#32if(oo==0)pp=pp+1if(oo==32)pp=pp+1
+Options4=Actv01Stop00OutO01
+Options5=Actv01Stop00OutO01
+Outgoing0=MID3<Outgoing Action="MIDI"><Simple Type="NoteOn"><Channel num="15"/><Value1 var="oo"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing1=MID3<Outgoing Action="MIDI"><Simple Type="NoteOff"><Channel num="15"/><Value1 var="oo"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing2=MID3<Outgoing Action="MIDI"><Simple Type="PitchBend"><Channel num="15"/><Value1 var="oo"/></Simple></Outgoing>
+Outgoing3=MID3<Outgoing Action="MIDI"><Simple Type="ControlChange"><Channel num="15"/><Value1 var="oo"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing4=MID3<Outgoing Action="MIDI"><Simple Type="ProgramChange"><Channel num="0"/><Value1 var="oo"/></Simple></Outgoing>
+Outgoing5=MID3<Outgoing Action="MIDI"><Simple Type="ChannelPressure"><Channel num="15"/><Value1 var="oo"/></Simple></Outgoing>
+PresetSwitchIgnore=0
+
+[Preset.10]
+Active=1
+Comments=
+DefaultInPorts=MIDA00010006DC RPi
+DefaultOutPorts=MIDA0001000CRoland SH-4D
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="2"/><Value1 var="oo" Type="SetVar"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="NoteOff"><Channel num="2"/><Value1 var="oo" Type="SetVar"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming2=MID3<Incoming Action="MIDI"><Simple Type="PitchBend"><Channel num="2"/><Value1 var="oo" Type="SetVar"/></Simple></Incoming>
+Incoming3=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="2"/><Value1 var="oo" Type="SetVar"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming4=MID3<Incoming Action="MIDI"><Simple Type="ProgramChange"><Channel num="2"/><Value1 var="oo" Type="SetVar"/></Simple></Incoming>
+Incoming5=MID3<Incoming Action="MIDI"><Simple Type="ChannelPressure"><Channel num="2"/><Value1 var="oo" Type="SetVar"/></Simple></Incoming>
+Name=Deluge -> SH-4d #3
+Name0=Note On
+Name1=Note Off
+Name2=Pitch Bend
+Name3=CC
+Name4=PC
+Name5=Channel Pressure
+Options0=Actv01Stop00OutO01
+Options1=Actv01Stop00OutO01
+Options2=Actv01Stop00OutO01
+Options3=Actv01Stop00OutO01StMa00000003label0023__cmt>// Only modify CC#0 and CC#32if(oo==0)pp=pp+1if(oo==32)pp=pp+1
+Options4=Actv01Stop00OutO01
+Options5=Actv01Stop00OutO01
+Outgoing0=MID3<Outgoing Action="MIDI"><Simple Type="NoteOn"><Channel num="2"/><Value1 var="oo"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing1=MID3<Outgoing Action="MIDI"><Simple Type="NoteOff"><Channel num="2"/><Value1 var="oo"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing2=MID3<Outgoing Action="MIDI"><Simple Type="PitchBend"><Channel num="2"/><Value1 var="oo"/></Simple></Outgoing>
+Outgoing3=MID3<Outgoing Action="MIDI"><Simple Type="ControlChange"><Channel num="2"/><Value1 var="oo"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing4=MID3<Outgoing Action="MIDI"><Simple Type="ProgramChange"><Channel num="2"/><Value1 var="oo"/></Simple></Outgoing>
+Outgoing5=MID3<Outgoing Action="MIDI"><Simple Type="ChannelPressure"><Channel num="2"/><Value1 var="oo"/></Simple></Outgoing>
+PresetSwitchIgnore=0
+
+[Preset.11]
+Active=1
+Comments=
+DefaultInPorts=MIDA00010006DC RPi
+DefaultOutPorts=MIDA0001000CRoland SH-4D
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="3"/><Value1 var="oo" Type="SetVar"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="NoteOff"><Channel num="3"/><Value1 var="oo" Type="SetVar"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming2=MID3<Incoming Action="MIDI"><Simple Type="PitchBend"><Channel num="3"/><Value1 var="oo" Type="SetVar"/></Simple></Incoming>
+Incoming3=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="3"/><Value1 var="oo" Type="SetVar"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming4=MID3<Incoming Action="MIDI"><Simple Type="ProgramChange"><Channel num="3"/><Value1 var="oo" Type="SetVar"/></Simple></Incoming>
+Incoming5=MID3<Incoming Action="MIDI"><Simple Type="ChannelPressure"><Channel num="3"/><Value1 var="oo" Type="SetVar"/></Simple></Incoming>
+Name=Deluge -> SH-4d #4
+Name0=Note On
+Name1=Note Off
+Name2=Pitch Bend
+Name3=CC
+Name4=PC
+Name5=Channel Pressure
+Options0=Actv01Stop00OutO01
+Options1=Actv01Stop00OutO01
+Options2=Actv01Stop00OutO01
+Options3=Actv01Stop00OutO01StMa00000003label0023__cmt>// Only modify CC#0 and CC#32if(oo==0)pp=pp+1if(oo==32)pp=pp+1
+Options4=Actv01Stop00OutO01
+Options5=Actv01Stop00OutO01
+Outgoing0=MID3<Outgoing Action="MIDI"><Simple Type="NoteOn"><Channel num="3"/><Value1 var="oo"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing1=MID3<Outgoing Action="MIDI"><Simple Type="NoteOff"><Channel num="3"/><Value1 var="oo"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing2=MID3<Outgoing Action="MIDI"><Simple Type="PitchBend"><Channel num="3"/><Value1 var="oo"/></Simple></Outgoing>
+Outgoing3=MID3<Outgoing Action="MIDI"><Simple Type="ControlChange"><Channel num="3"/><Value1 var="oo"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing4=MID3<Outgoing Action="MIDI"><Simple Type="ProgramChange"><Channel num="3"/><Value1 var="oo"/></Simple></Outgoing>
+Outgoing5=MID3<Outgoing Action="MIDI"><Simple Type="ChannelPressure"><Channel num="3"/><Value1 var="oo"/></Simple></Outgoing>
+PresetSwitchIgnore=0
+
+[Preset.12]
+Active=1
+Comments=
+DefaultInPorts=MIDA00010006DC RPi
+DefaultOutPorts=MIDA0001000CRoland SH-4D
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="4"/><Value1 var="oo" Type="SetVar"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="NoteOff"><Channel num="4"/><Value1 var="oo" Type="SetVar"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming2=MID3<Incoming Action="MIDI"><Simple Type="PitchBend"><Channel num="4"/><Value1 var="oo" Type="SetVar"/></Simple></Incoming>
+Incoming3=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="4"/><Value1 var="oo" Type="SetVar"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming4=MID3<Incoming Action="MIDI"><Simple Type="ProgramChange"><Channel num="4"/><Value1 var="oo" Type="SetVar"/></Simple></Incoming>
+Incoming5=MID3<Incoming Action="MIDI"><Simple Type="ChannelPressure"><Channel num="4"/><Value1 var="oo" Type="SetVar"/></Simple></Incoming>
+Name=Deluge -> SH-4d #5
+Name0=Note On
+Name1=Note Off
+Name2=Pitch Bend
+Name3=CC
+Name4=PC
+Name5=Channel Pressure
+Options0=Actv01Stop00OutO01
+Options1=Actv01Stop00OutO01
+Options2=Actv01Stop00OutO01
+Options3=Actv01Stop00OutO01StMa00000003label0023__cmt>// Only modify CC#0 and CC#32if(oo==0)pp=pp+1if(oo==32)pp=pp+1
+Options4=Actv01Stop00OutO01
+Options5=Actv01Stop00OutO01
+Outgoing0=MID3<Outgoing Action="MIDI"><Simple Type="NoteOn"><Channel num="4"/><Value1 var="oo"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing1=MID3<Outgoing Action="MIDI"><Simple Type="NoteOff"><Channel num="4"/><Value1 var="oo"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing2=MID3<Outgoing Action="MIDI"><Simple Type="PitchBend"><Channel num="4"/><Value1 var="oo"/></Simple></Outgoing>
+Outgoing3=MID3<Outgoing Action="MIDI"><Simple Type="ControlChange"><Channel num="4"/><Value1 var="oo"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing4=MID3<Outgoing Action="MIDI"><Simple Type="ProgramChange"><Channel num="4"/><Value1 var="oo"/></Simple></Outgoing>
+Outgoing5=MID3<Outgoing Action="MIDI"><Simple Type="ChannelPressure"><Channel num="4"/><Value1 var="oo"/></Simple></Outgoing>
+PresetSwitchIgnore=0
+
+[Preset.2]
+Active=1
+Comments=
+DefaultInPorts=MIDA00010012MONTAGE M Keyboard
+DefaultOutPorts=MIDA00010006Deluge
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="2"/><Value1 var="oo" Type="SetVar"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="NoteOff"><Channel num="2"/><Value1 var="oo" Type="SetVar"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming2=MID3<Incoming Action="MIDI"><Simple Type="PitchBend"><Channel num="2"/><Value1 var="oo" Type="SetVar"/></Simple></Incoming>
+Incoming3=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="2"/><Value1 var="oo" Type="SetVar"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming4=MID3<Incoming Action="MIDI"><Simple Type="ProgramChange"><Channel num="2"/><Value1 var="oo" Type="SetVar"/></Simple></Incoming>
+Incoming5=MID3<Incoming Action="MIDI"><Simple Type="ChannelPressure"><Channel num="2"/><Value1 var="oo" Type="SetVar"/></Simple></Incoming>
+Name=MONTAGE -> Deluge (Ch. 3)
+Name0=Note On
+Name1=Note Off
+Name2=Pitch Bend
+Name3=CC
+Name4=PC
+Name5=Channel Pressure
+Options0=Actv01Stop00OutO01
+Options1=Actv01Stop00OutO01
+Options2=Actv01Stop00OutO01
+Options3=Actv01Stop00OutO01
+Options4=Actv01Stop00OutO01
+Options5=Actv01Stop00OutO01
+Outgoing0=MID3<Outgoing Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 var="oo"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing1=MID3<Outgoing Action="MIDI"><Simple Type="NoteOff"><Channel num="0"/><Value1 var="oo"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing2=MID3<Outgoing Action="MIDI"><Simple Type="PitchBend"><Channel num="0"/><Value1 var="oo"/></Simple></Outgoing>
+Outgoing3=MID3<Outgoing Action="MIDI"><Simple Type="ControlChange"><Channel num="0"/><Value1 var="oo"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing4=MID3<Outgoing Action="MIDI"><Simple Type="ProgramChange"><Channel num="0"/><Value1 var="oo"/></Simple></Outgoing>
+Outgoing5=MID3<Outgoing Action="MIDI"><Simple Type="ChannelPressure"><Channel num="0"/><Value1 var="oo"/></Simple></Outgoing>
+PresetSwitchIgnore=0
+
+[Preset.3]
+Active=1
+Comments=
+DefaultInPorts=MIDA00010012MONTAGE M Keyboard
+DefaultOutPorts=MIDA0001000DBomeBox: Peak
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="3"/><Value1 var="oo" Type="SetVar"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="NoteOff"><Channel num="3"/><Value1 var="oo" Type="SetVar"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming2=MID3<Incoming Action="MIDI"><Simple Type="PitchBend"><Channel num="3"/><Value1 var="oo" Type="SetVar"/></Simple></Incoming>
+Incoming3=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="3"/><Value1 var="oo" Type="SetVar"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming4=MID3<Incoming Action="MIDI"><Simple Type="ProgramChange"><Channel num="3"/><Value1 var="oo" Type="SetVar"/></Simple></Incoming>
+Incoming5=MID3<Incoming Action="MIDI"><Simple Type="ChannelPressure"><Channel num="3"/><Value1 var="oo" Type="SetVar"/></Simple></Incoming>
+Name=MONTAGE -> Peak (Ch. 4)
+Name0=Note On
+Name1=Note Off
+Name2=Pitch Bend
+Name3=CC
+Name4=PC
+Name5=Channel Pressure
+Options0=Actv01Stop00OutO01
+Options1=Actv01Stop00OutO01
+Options2=Actv01Stop00OutO01
+Options3=Actv01Stop00OutO01
+Options4=Actv01Stop00OutO01
+Options5=Actv01Stop00OutO01
+Outgoing0=MID3<Outgoing Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 var="oo"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing1=MID3<Outgoing Action="MIDI"><Simple Type="NoteOff"><Channel num="0"/><Value1 var="oo"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing2=MID3<Outgoing Action="MIDI"><Simple Type="PitchBend"><Channel num="0"/><Value1 var="oo"/></Simple></Outgoing>
+Outgoing3=MID3<Outgoing Action="MIDI"><Simple Type="ControlChange"><Channel num="0"/><Value1 var="oo"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing4=MID3<Outgoing Action="MIDI"><Simple Type="ProgramChange"><Channel num="0"/><Value1 var="oo"/></Simple></Outgoing>
+Outgoing5=MID3<Outgoing Action="MIDI"><Simple Type="ChannelPressure"><Channel num="0"/><Value1 var="oo"/></Simple></Outgoing>
+PresetSwitchIgnore=0
+
+[Preset.4]
+Active=0
+Comments=
+DefaultInPorts=MIDA00010012MONTAGE M Keyboard
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="4"/><Value1 var="oo" Type="SetVar"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="NoteOff"><Channel num="4"/><Value1 var="oo" Type="SetVar"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming2=MID3<Incoming Action="MIDI"><Simple Type="PitchBend"><Channel num="4"/><Value1 var="oo" Type="SetVar"/></Simple></Incoming>
+Incoming3=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="4"/><Value1 var="oo" Type="SetVar"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming4=MID3<Incoming Action="MIDI"><Simple Type="ChannelPressure"><Channel num="4"/><Value1 var="oo" Type="SetVar"/></Simple></Incoming>
+Name=MONTAGE -> Ch. 5
+Name0=Note On
+Name1=Note Off
+Name2=Pitch Bend
+Name3=CC
+Name4=Channel Pressure
+Options0=Actv01Stop00OutO01
+Options1=Actv01Stop00OutO01
+Options2=Actv01Stop00OutO01
+Options3=Actv01Stop00OutO01
+Options4=Actv01Stop00OutO01
+Outgoing0=MID3<Outgoing Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 var="oo"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing1=MID3<Outgoing Action="MIDI"><Simple Type="NoteOff"><Channel num="0"/><Value1 var="oo"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing2=MID3<Outgoing Action="MIDI"><Simple Type="PitchBend"><Channel num="0"/><Value1 var="oo"/></Simple></Outgoing>
+Outgoing3=MID3<Outgoing Action="MIDI"><Simple Type="ControlChange"><Channel num="0"/><Value1 var="oo"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing4=MID3<Outgoing Action="MIDI"><Simple Type="ChannelPressure"><Channel num="0"/><Value1 var="oo"/></Simple></Outgoing>
+PresetSwitchIgnore=0
+
+[Preset.5]
+Active=0
+Comments=
+DefaultInPorts=MIDA00010012MONTAGE M Keyboard
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="5"/><Value1 var="oo" Type="SetVar"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="NoteOff"><Channel num="5"/><Value1 var="oo" Type="SetVar"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming2=MID3<Incoming Action="MIDI"><Simple Type="PitchBend"><Channel num="5"/><Value1 var="oo" Type="SetVar"/></Simple></Incoming>
+Incoming3=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="5"/><Value1 var="oo" Type="SetVar"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming4=MID3<Incoming Action="MIDI"><Simple Type="ChannelPressure"><Channel num="5"/><Value1 var="oo" Type="SetVar"/></Simple></Incoming>
+Name=MONTAGE -> Ch. 6
+Name0=Note On
+Name1=Note Off
+Name2=Pitch Bend
+Name3=CC
+Name4=Channel Pressure
+Options0=Actv01Stop00OutO01
+Options1=Actv01Stop00OutO01
+Options2=Actv01Stop00OutO01
+Options3=Actv01Stop00OutO01
+Options4=Actv01Stop00OutO01
+Outgoing0=MID3<Outgoing Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 var="oo"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing1=MID3<Outgoing Action="MIDI"><Simple Type="NoteOff"><Channel num="0"/><Value1 var="oo"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing2=MID3<Outgoing Action="MIDI"><Simple Type="PitchBend"><Channel num="0"/><Value1 var="oo"/></Simple></Outgoing>
+Outgoing3=MID3<Outgoing Action="MIDI"><Simple Type="ControlChange"><Channel num="0"/><Value1 var="oo"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing4=MID3<Outgoing Action="MIDI"><Simple Type="ChannelPressure"><Channel num="0"/><Value1 var="oo"/></Simple></Outgoing>
+PresetSwitchIgnore=0
+
+[Preset.6]
+Active=0
+Comments=
+DefaultInPorts=MIDA00010012MONTAGE M Keyboard
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="6"/><Value1 var="oo" Type="SetVar"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="NoteOff"><Channel num="6"/><Value1 var="oo" Type="SetVar"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming2=MID3<Incoming Action="MIDI"><Simple Type="PitchBend"><Channel num="6"/><Value1 var="oo" Type="SetVar"/></Simple></Incoming>
+Incoming3=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="6"/><Value1 var="oo" Type="SetVar"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming4=MID3<Incoming Action="MIDI"><Simple Type="ChannelPressure"><Channel num="6"/><Value1 var="oo" Type="SetVar"/></Simple></Incoming>
+Name=MONTAGE -> Ch. 7
+Name0=Note On
+Name1=Note Off
+Name2=Pitch Bend
+Name3=CC
+Name4=Channel Pressure
+Options0=Actv01Stop00OutO01
+Options1=Actv01Stop00OutO01
+Options2=Actv01Stop00OutO01
+Options3=Actv01Stop00OutO01
+Options4=Actv01Stop00OutO01
+Outgoing0=MID3<Outgoing Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 var="oo"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing1=MID3<Outgoing Action="MIDI"><Simple Type="NoteOff"><Channel num="0"/><Value1 var="oo"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing2=MID3<Outgoing Action="MIDI"><Simple Type="PitchBend"><Channel num="0"/><Value1 var="oo"/></Simple></Outgoing>
+Outgoing3=MID3<Outgoing Action="MIDI"><Simple Type="ControlChange"><Channel num="0"/><Value1 var="oo"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing4=MID3<Outgoing Action="MIDI"><Simple Type="ChannelPressure"><Channel num="0"/><Value1 var="oo"/></Simple></Outgoing>
+PresetSwitchIgnore=0
+
+[Preset.7]
+Active=0
+Comments=
+DefaultInPorts=MIDA00010012MONTAGE M Keyboard
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="3"/><Value1 var="oo" Type="SetVar"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="NoteOff"><Channel num="3"/><Value1 var="oo" Type="SetVar"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming2=MID3<Incoming Action="MIDI"><Simple Type="PitchBend"><Channel num="3"/><Value1 var="oo" Type="SetVar"/></Simple></Incoming>
+Incoming3=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="3"/><Value1 var="oo" Type="SetVar"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming4=MID3<Incoming Action="MIDI"><Simple Type="ChannelPressure"><Channel num="3"/><Value1 var="oo" Type="SetVar"/></Simple></Incoming>
+Name=MONTAGE -> Ch. 8
+Name0=Note On
+Name1=Note Off
+Name2=Pitch Bend
+Name3=CC
+Name4=Channel Pressure
+Options0=Actv01Stop00OutO01
+Options1=Actv01Stop00OutO01
+Options2=Actv01Stop00OutO01
+Options3=Actv01Stop00OutO01
+Options4=Actv01Stop00OutO01
+Outgoing0=MID3<Outgoing Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 var="oo"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing1=MID3<Outgoing Action="MIDI"><Simple Type="NoteOff"><Channel num="0"/><Value1 var="oo"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing2=MID3<Outgoing Action="MIDI"><Simple Type="PitchBend"><Channel num="0"/><Value1 var="oo"/></Simple></Outgoing>
+Outgoing3=MID3<Outgoing Action="MIDI"><Simple Type="ControlChange"><Channel num="0"/><Value1 var="oo"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing4=MID3<Outgoing Action="MIDI"><Simple Type="ChannelPressure"><Channel num="0"/><Value1 var="oo"/></Simple></Outgoing>
+PresetSwitchIgnore=0
+
+[Preset.8]
+Active=1
+Comments=
+DefaultInPorts=MIDA00010006DC RPi
+DefaultOutPorts=MIDA0001000CRoland SH-4D
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 var="oo" Type="SetVar"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="NoteOff"><Channel num="0"/><Value1 var="oo" Type="SetVar"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming2=MID3<Incoming Action="MIDI"><Simple Type="PitchBend"><Channel num="0"/><Value1 var="oo" Type="SetVar"/></Simple></Incoming>
+Incoming3=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="0"/><Value1 var="oo" Type="SetVar"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming4=MID3<Incoming Action="MIDI"><Simple Type="ProgramChange"><Channel num="0"/><Value1 var="oo" Type="SetVar"/></Simple></Incoming>
+Incoming5=MID3<Incoming Action="MIDI"><Simple Type="ChannelPressure"><Channel num="0"/><Value1 var="oo" Type="SetVar"/></Simple></Incoming>
+Name=Deluge -> SH-4d #1
+Name0=Note On
+Name1=Note Off
+Name2=Pitch Bend
+Name3=CC
+Name4=PC
+Name5=Channel Pressure
+Options0=Actv01Stop00OutO01
+Options1=Actv01Stop00OutO01
+Options2=Actv01Stop00OutO01
+Options3=Actv01Stop00OutO01StMa00000003label0023__cmt>// Only modify CC#0 and CC#32if(oo==0)pp=pp+1if(oo==32)pp=pp+1
+Options4=Actv01Stop00OutO01
+Options5=Actv01Stop00OutO01
+Outgoing0=MID3<Outgoing Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 var="oo"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing1=MID3<Outgoing Action="MIDI"><Simple Type="NoteOff"><Channel num="0"/><Value1 var="oo"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing2=MID3<Outgoing Action="MIDI"><Simple Type="PitchBend"><Channel num="0"/><Value1 var="oo"/></Simple></Outgoing>
+Outgoing3=MID3<Outgoing Action="MIDI"><Simple Type="ControlChange"><Channel num="0"/><Value1 var="oo"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing4=MID3<Outgoing Action="MIDI"><Simple Type="ProgramChange"><Channel num="0"/><Value1 var="oo"/></Simple></Outgoing>
+Outgoing5=MID3<Outgoing Action="MIDI"><Simple Type="ChannelPressure"><Channel num="0"/><Value1 var="oo"/></Simple></Outgoing>
+PresetSwitchIgnore=0
+
+[Preset.9]
+Active=1
+Comments=
+DefaultInPorts=MIDA00010006DC RPi
+DefaultOutPorts=MIDA0001000CRoland SH-4D
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="1"/><Value1 var="oo" Type="SetVar"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="NoteOff"><Channel num="1"/><Value1 var="oo" Type="SetVar"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming2=MID3<Incoming Action="MIDI"><Simple Type="PitchBend"><Channel num="1"/><Value1 var="oo" Type="SetVar"/></Simple></Incoming>
+Incoming3=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="1"/><Value1 var="oo" Type="SetVar"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming4=MID3<Incoming Action="MIDI"><Simple Type="ProgramChange"><Channel num="1"/><Value1 var="oo" Type="SetVar"/></Simple></Incoming>
+Incoming5=MID3<Incoming Action="MIDI"><Simple Type="ChannelPressure"><Channel num="1"/><Value1 var="oo" Type="SetVar"/></Simple></Incoming>
+Name=Deluge -> SH-4d #2
+Name0=Note On
+Name1=Note Off
+Name2=Pitch Bend
+Name3=CC
+Name4=PC
+Name5=Channel Pressure
+Options0=Actv01Stop00OutO01
+Options1=Actv01Stop00OutO01
+Options2=Actv01Stop00OutO01
+Options3=Actv01Stop00OutO01StMa00000003label0023__cmt>// Only modify CC#0 and CC#32if(oo==0)pp=pp+1if(oo==32)pp=pp+1
+Options4=Actv01Stop00OutO01
+Options5=Actv01Stop00OutO01
+Outgoing0=MID3<Outgoing Action="MIDI"><Simple Type="NoteOn"><Channel num="1"/><Value1 var="oo"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing1=MID3<Outgoing Action="MIDI"><Simple Type="NoteOff"><Channel num="1"/><Value1 var="oo"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing2=MID3<Outgoing Action="MIDI"><Simple Type="PitchBend"><Channel num="1"/><Value1 var="oo"/></Simple></Outgoing>
+Outgoing3=MID3<Outgoing Action="MIDI"><Simple Type="ControlChange"><Channel num="1"/><Value1 var="oo"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing4=MID3<Outgoing Action="MIDI"><Simple Type="ProgramChange"><Channel num="1"/><Value1 var="oo"/></Simple></Outgoing>
+Outgoing5=MID3<Outgoing Action="MIDI"><Simple Type="ChannelPressure"><Channel num="1"/><Value1 var="oo"/></Simple></Outgoing>
+PresetSwitchIgnore=0
+
+[Project]
+DefaultInPorts=MIDA00010012MONTAGE M Keyboard
+DefaultOutPorts=MIDA0000
+Version=2
+
+[Signatures]
+SigName-1=[Midi Translator Pro Internal]
+Signature-1=v0/Jo066F870wXOQslfCFKbVD/6n0E7uRVxQ+hQDuPm2wkCZc9YnsHTDbnlrfedJ4JXAURq5yIV8X94FOmBF8/AH5YuLqiyOKfrhZIfFi2mPayU+0+M+/2aeoyOHzGDkkK6PRchsdBxVgAhS+JxiipwrijpDPSXDkTLvRtZmvMU=
+SignedBy-1=Douglas Carmichael
+
