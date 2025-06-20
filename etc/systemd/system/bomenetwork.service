@@ -1,0 +1,16 @@
+[Unit]
+Description=Bome Network Daemon
+After=network.target
+
+[Service]
+ExecStart="/opt/bome/Bome Network" -netAllowAll
+WorkingDirectory=/opt/bome
+Restart=on-failure
+Nice=-10
+CPUAffinity=3
+CPUSchedulingPolicy=fifo
+CPUSchedulingPriority=70
+User=root
+
+[Install]
+WantedBy=multi-user.target

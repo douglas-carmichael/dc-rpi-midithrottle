@@ -1,0 +1,11 @@
+[Unit]
+Description=Set USB IRQ CPU Affinity
+After=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/opt/bome/set-usb-irq-affinity.sh
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target
